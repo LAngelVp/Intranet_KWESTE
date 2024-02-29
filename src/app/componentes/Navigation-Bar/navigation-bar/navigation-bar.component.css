@@ -1,3 +1,31 @@
 .color_navbar{
     background-color: var(--color_navbar);
 }
+.font_navbar{
+    font-size: 1.2rem;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+}
+.link_nabvar_link{
+    border-radius: 2rem;
+    position: relative;
+}
+.link_nabvar_link::before{
+    content:"";
+    position: absolute;
+    top: 90%;
+    left: 0px;
+    width: 0px;
+    height: 5%;
+    background: rgb(253, 0, 0);
+    transition: all 0.3s ease;
+}
+.link_nabvar_link:hover:before {
+    width: 100%;
+    }
+
+.hover_button_navbar:hover{
+    color: rgb(48, 48, 48);
+}

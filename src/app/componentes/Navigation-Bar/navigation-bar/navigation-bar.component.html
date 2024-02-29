@@ -1,14 +1,19 @@
 <div class="navbar container-fluid bg-black">
     <div class="p-2 p-md-0 m-0 m-md-auto w-100 container-fluid container-md justify-content-between">
-        <a href="#" class="navbar-brand col-4 col-md-5 col-lg-3 pl-0">
-            <img class="d-block w-100" src="../../../../assets/imagenes/Logo_Kenworth.svg" alt="">
+        <a routerLink="/"  class="navbar-brand col-6 col-sm-4 col-md-4 col-lg-3 pl-0">
+            <img class="d-block w-100" src="../../../../assets/imagenes/Logo_Kenworth.svg" alt="Logo_Kenworth">
         </a>
-        <div class="col">
+        <div class="col d-none d-lg-block">
             <ul class="navbar-nav flex-row gap-2 justify-content-end">
-                <li class="nav-item"><a class="text-light nav-link" href="#">Concesionarios</a></li>
-                <li class="nav-item"><a class="text-light nav-link" href="#">Metodología 5s</a></li>
-                <li class="nav-item"><a class="text-light nav-link" href="#">Repositorio TQC</a></li>
+                <li class="nav-item link_navbar"><a class="font_navbar nav-link link_nabvar_link" routerLink="/concesionarios">Concesionarios</a></li>
+                <li class="nav-item"><a class="font_navbar nav-link link_nabvar_link" routerLink="/metodologia-5s">Metodología 5s</a></li>
+                <li class="nav-item"><a class="font_navbar nav-link link_nabvar_link" routerLink="/repositorioTQC">Repositorio TQC</a></li>
             </ul>
+        </div>
+        <div class="col d-flex justify-content-end navbar-brand d-block d-lg-none">
+            <button class="btn btn-outline-light d-flex gap-2">
+                <i class="bi bi-list fs-5 font_navbar hover_button_navbar">Menu</i>
+            </button>
         </div>
     </div>
 </div>
